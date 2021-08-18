@@ -30,6 +30,6 @@ const myfunc = (args) => {
 
 // Arrow function was created to solve the Problem of n`this` Keyword .. It Becomes important when you assign the function to Objects like"Variables". `this` Keyword in JavaScript refers to the window Object 
 
-// Let's see a Arrow function rertuen something
+// Let's see a Arrow function rerturn something
 const multiply = number => number * 2;
 console.log(multiply(4))
