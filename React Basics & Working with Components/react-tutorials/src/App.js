@@ -28,6 +28,7 @@ function App() {
     }
   ]
   return (
+    // We cannot directly use data of One component into anothe Component ... To Share data between Components we use concepts of props in React ... where we pass data using "Attributes" from the Components tags as you see below ...
     <div>
       <h2>Let's Get Started</h2>
       <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date} />

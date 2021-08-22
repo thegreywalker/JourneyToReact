@@ -4,6 +4,7 @@ function ExpenseItem(props) {
     const expenseTitle = 'Car Insurance';
     const expenseAmount = 294.67
     return (
+        // Now the data sent using attributes from the Components tags in the App.js file into this file we will access it using props pramas in the function above ... Now, since the data was sent using attributes so we will access the attributes as a property of Props like "props.name" etc ...
         <div className ="expense-item">
             <div>{props.date.toDateString()}</div>
             <div className="expense-item__description">
