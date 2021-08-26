@@ -17,7 +17,7 @@ const Expenses = (props) => {
         // This Section accepts data from the App.js file and then uses it in the ExpenseItem Components with the help of Props
 
         <Card className="expenses">
-            <ExpensesFilter selected = {filteredYear} onChangedValue={extractChangedYear}/>
+            <ExpensesFilter selected={filteredYear} onChangedValue={extractChangedYear}/>
 
             <ExpenseItem
                 title={props.expense[0].title}
