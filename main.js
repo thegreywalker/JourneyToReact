@@ -5,3 +5,4 @@ button.addEventListener('click', () => {
     console.log('Clicked');
 }
 );  // end of button event listener
+
