@@ -9,7 +9,6 @@ function App() {
 
     React.useEffect(() => {
         const storageUserLoggedIn = localStorage.getItem("isLoggedIn");
-        console.log("I am Running");
 
         if (storageUserLoggedIn === "true") {
             setIsLoggedIn(true);
