@@ -34,7 +34,7 @@ const passwordReducer = (state, action) => {
     return { value: "", isValid: false };
 };
 
-const Login = (props) => {
+const Login = ({onLogin}) => {
     // const [enteredEmail, setEnteredEmail] = useState("");
     // const [emailIsValid, setEmailIsValid] = useState();
     // const [enteredPassword, setEnteredPassword] = useState("");
@@ -93,7 +93,7 @@ const Login = (props) => {
 
     const submitHandler = (event) => {
         event.preventDefault();
-        props.onLogin(emailState.value, passwordState.value);
+        onLogin(emailState.value, passwordState.value);
     };
 
     return (
