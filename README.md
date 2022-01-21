@@ -1,6 +1,6 @@
 # React-Tutorials
 
-`<img src="/assets/React.jpeg" alt="MarineGEO circle logo"/>`
+![ React ](./assests/React.jpeg)
 
 
 
