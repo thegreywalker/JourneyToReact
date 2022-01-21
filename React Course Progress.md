@@ -2,7 +2,7 @@
 
 ---
 
-### ***Note: The Progress here is being tracked from the Section 10***
+#***Note: The Progress here is being tracked from the Section 10***
 
 | ***`SEC`*** | *`Lecture No.`* | *`Title of Lecture`* | *`Description`* |
 | --- | --- | --- | --- |
@@ -11,7 +11,7 @@
 | x   | [111](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25599212#overview) | Using the *`UseEffect()`* Hook | The *`UseEffect()`* hook as mentioned is used to render few things decided it's Side Effects are mentioned in a place called *`Dependency Array`* in the Hook ... It Works Say, you wanna Check if any user Visiting Your Webpage is *`logged in`* or not, in that case, write the Code in the *`useEffect()`* Hook and then keep the Dependency Array Empty, it will signify every time the Page is loaded for the First Time it will check the Login Status |
 | x   | [112](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25599216#overview) | *`useEffect()`* Hook and it's Dependencies | This teaches about how to use the *`useEffect()`* Hook in general and what to add and what not to add in it's Dependencies, More on <mark>#useEffect-Dependencies</mark> |
 
-#### # *useEffect Dependencies*
+ #*useEffect Dependencies*
 
 - You learned, that you should add "everything" you use in the effect 
   function as a dependency - i.e. all state variables and functions you 
