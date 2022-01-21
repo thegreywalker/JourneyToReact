@@ -1,6 +1,6 @@
 # React-Tutorials
 
-![](/home/iamapurba2003/Pictures/React.jpeg)
+![](/assets/React.jpeg)
 
 
 
