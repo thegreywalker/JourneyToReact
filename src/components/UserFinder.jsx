@@ -3,20 +3,20 @@ import React, { Fragment, useState, useEffect } from "react";
 import Users from "./Users";
 import classes from "./UserFinder.module.css";
 import UsersContext from "../store/users-context";
-
+import ErrorBoundary from "./ErrorBoundary";
 
 class UserFinder extends React.Component {
-  static contextType = UsersContext
+    static contextType = UsersContext;
     constructor() {
         super();
         this.state = {
-            filteredUsers: [], 
+            filteredUsers: [],
             searchTerm: "",
         };
     }
 
     componentDidMount() {
-      this.setState({ filteredUsers: this.context.users });
+        this.setState({ filteredUsers: this.context.users });
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -42,7 +42,9 @@ class UserFinder extends React.Component {
                         onChange={this.searchChangeHandler.bind(this)}
                     />
                 </div>
-                <Users users={this.state.filteredUsers} />
+                <ErrorBoundary>
+                    <Users users={this.state.filteredUsers} />
+                </ErrorBoundary>
             </React.Fragment>
         );
     }
