@@ -1,25 +1,27 @@
-import Header from "./Components/Header";
+import { Switch, Redirect, Route } from "react-router-dom";
+import { Home, AllOrders, MyAccount } from "./pages";
+import Layout from "./Components/layout/Layout";
 
 function App() {
-  const DUMMY_DATA = (
-    <p className="mt-5 bg-blue-400 font-extrabold max-w-md mx-auto rounded-lg p-4 text-white text-2xl italic hover:bg-blue-200 cursor-pointer">
-      Let's Build a Dummy Frontend for Backend Testing!!🔥
-    </p>
-  );
-
-
   return (
-  <div className="App">
-    {DUMMY_DATA}
-
-    {/* Header */}
-    <Header />
-
-    {/* Body Content */}
-    {/* Footer */}
-
-  </div>
+    
+      <Layout>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home" exact>
+            <Home />
+          </Route>
+          <Route path="/allOrders">
+            <AllOrders />
+          </Route>
+          <Route path="/myaccount/:id">
+            <MyAccount />
+          </Route>
+        </Switch>
+      </Layout>
+   
   );
-
 }
 export default App;

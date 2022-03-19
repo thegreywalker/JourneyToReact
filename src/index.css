@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    background-color: beige;
+}
+ /* linear-gradient(to left, rgb(156, 163, 175), rgb(75, 85, 99), rgb(30, 64, 175)) */
