@@ -38,7 +38,7 @@ const AllProducts = () => {
       </section>
       <section>{allProducts.map(data => {
         return (
-          <div key={data.id} className="from-blue-600 to-purple-500 bg-gradient-to-r p-4 mx-auto space-y-2 text-left space-x-5 rounded-lg border-4 border-double">
+          <div key={data.id} className="from-blue-600 to-purple-500 bg-gradient-to-r p-4 mx-auto space-y-2 m-4 text-left space-x-5 rounded-lg border-4 border-double">
             <img className="w-40 h-40 rounded-md" src={data.image} alt={data.name} />
             <div className="text-xl italic text-white">
               
