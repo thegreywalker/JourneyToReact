@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Apurba Ghosh",
+      "email": "new.to.world2003@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Arunodaya Biswas",
+      "email": "thearunodaya2004@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Himangshu De",
+      "email": "dehimangshu2020@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Anindita Ghosh",
+      "email": "anindita.ghosh2004@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "Rumki Ghosh",
+      "email": "rumki#ghosh@gmail.com"
+    },
+    {
+      "id": "6",
+      "name": "Sujan Mondal",
+      "email": "sujan.mondal2003@gmail.com"
+    }
+  ]
+}
