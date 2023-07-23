@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw HTML & JS</title>
+</head>
+<body>
+    <!-- Now this is how we write Raw HTML and create elements -->
+    <div class="parent">
+        <div class="child">
+            <h1>Hello World!</h1>
+        </div>
+    </div>
+
+    <!-- Let's do the same with JS now -->
+    <div id="root"></div>
+
+    <script>
+        const root = document.getElementById('root');
+        const h1 = document.createElement('h1');
+        h1.innerHTML = "Hello World!";
+
+        root.appendChild(h1);
+    </script>
+</body>
+</html>
