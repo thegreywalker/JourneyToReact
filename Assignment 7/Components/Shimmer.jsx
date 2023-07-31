@@ -2,7 +2,6 @@ import React from "react";
 import "../shimmer.css";
 
 const Shimmer = () => {
-    console.log("Shimmer Called");
     return (
         <div className="body-container__shimmer">
             <div className="card">

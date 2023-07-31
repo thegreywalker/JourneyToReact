@@ -64,6 +64,12 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
 }
 
 .body-container {
@@ -88,6 +94,11 @@
     gap: 10px;
     width: 79%;
     flex-wrap: wrap;
+}
+
+.body a {
+    text-decoration: none;
+    color: black;
 }
 
 .res-card {

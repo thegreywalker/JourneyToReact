@@ -6,7 +6,7 @@
     position: relative;
     -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    background-color: #FFF;
+    background-color: #bdbdbd;
     border-radius: 6px;
     height: 500px;
     overflow: hidden;
@@ -19,7 +19,7 @@
         animation-iteration-count: infinite;
         animation-name: shimmer;
         animation-timing-function: linear;
-        background: #ddd;
+        background: #dad2d2;
         background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
         background-size: 1200px 100%;
     }

@@ -1,0 +1,144 @@
+.res-menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-menu-container__mock {
+    width: 60%;
+    margin-top: 80px;
+}
+
+.res-menu-container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left-pane {
+    width: 40%;
+}
+
+.header__left-pane .name {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.header__left-pane .cuisines {
+    font-size: small;
+    color: gray;
+    font-weight: 300;
+    display: flex;
+    gap: 5px;
+}
+
+.header__left-pane .location {
+    font-size: small;
+    color: gray;
+    font-weight: 400;
+}
+
+.header__rating {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgreen;
+}
+
+.border {
+    border: 1px dashed lightgray;
+    width: 100%;
+    height: 0px;
+    margin-top: 15px;
+}
+
+.extraInfo {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.extraInfo h1 {
+    font-size: medium;
+    margin-left: 30px;
+}
+
+.menu-container {
+    margin-top: 200px;
+}
+
+.res-menu {
+    margin-top: 30px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.res-menu__left-pane {
+    margin-top: 20px;
+    width: 75%;
+}
+
+.res-menu__left-pane .name {
+    font-size: large;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.res-menu__left-pane .price {
+    font-size: small;
+    margin: 7px 0px;
+    font-weight: 400;
+    color: black;
+}
+
+.res-menu__left-pane .description {
+    font-size: small;
+    font-weight: 300;
+    color: gray;
+    margin-top: 17px;
+}
+
+.res-menu__image {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.res-menu__image img {
+    width: 55%;
+    height: 70%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 30px;
+    background-color: green;
+}
+
+.res-menu__image .button {
+    background-color: white;
+    position: absolute; 
+    bottom: 22px;
+    right: 37px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+}
+
+.res-menu__image h1 {
+    font-size: small;
+    color: green;
+}
+
+
+
