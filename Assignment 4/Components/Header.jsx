@@ -5,7 +5,6 @@ const Header = ({setSearch}) => {
 
 	const handleSearch = () => {
 		setSearch(searchValue);
-		console.log(searchValue);
 		setSearchValue('');
 	}
 

@@ -73,6 +73,14 @@
     justify-content: space-evenly;
 }
 
+.body-container__shimmer {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 60px;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
 .body {
     display: flex;
     justify-content: start;
