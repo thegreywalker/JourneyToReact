@@ -1,0 +1,29 @@
+{
+  "name": "namaste-food",
+  "version": "1.0.0",
+  "description": "Food Delivery App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html",
+    "build": "npm parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/thegreywalker/JourneyToReact.git"
+  },
+  "author": "Apurba Ghosh (Dust Of Snow)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thegreywalker/JourneyToReact/issues"
+  },
+  "homepage": "https://github.com/thegreywalker/JourneyToReact#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
