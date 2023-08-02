@@ -1,9 +1,9 @@
 import React from "react";
-import { API, Menu } from "../Components/utils/config";
+import { API } from "../Components/utils/config";
 
 const useRestraunt = () => {
-    const [response, setResponse] = React.useState(Menu);
-    const [filteredRes, setFilteredRes] = React.useState(Menu);
+    const [response, setResponse] = React.useState();
+    const [filteredRes, setFilteredRes] = React.useState();
 
     React.useEffect(() => {
         fetchData();

@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .header li {
@@ -25,7 +28,7 @@
 
 .search {
     width: 50%;
-    height: 80%;
+    height: 65%;
     margin-left: 300px;
     display: flex;
 }
@@ -38,6 +41,7 @@
     text-align: start;
     padding-left: 15px;
     border: 1px solid black;
+    outline: none;
 }
 
 .search-container {

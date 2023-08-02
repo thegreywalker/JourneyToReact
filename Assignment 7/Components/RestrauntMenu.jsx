@@ -52,7 +52,7 @@ const RestrauntMenu = () => {
                     <h1 className="cost">{restrauntData.costForTwoMessage}</h1>
                 </div>
                 <div className="menu-container">
-                    {Menu.map((MenuCard) => (
+                    {Menu?.map((MenuCard) => (
                         <RestrauntMenuCard
                             key={MenuCard.card.info.id}
                             imageId={MenuCard.card.info.imageId}
