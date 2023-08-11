@@ -1,0 +1,143 @@
+*, html {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 5px 5px 5px lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+.header li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header img {
+    width: 100px;
+    height: 80px;
+}
+
+.search {
+    width: 50%;
+    height: 65%;
+    margin-left: 300px;
+    display: flex;
+}
+.search input {
+    width: 88%;
+    height: 100%;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 15px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.search-container {
+    width: 10%;
+    height: 100%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border: 1px solid black;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search img {
+    width: 30px;
+    height: 30px;
+}
+
+.items {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+}
+
+.body-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.body-container__shimmer {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 60px;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 79%;
+    flex-wrap: wrap;
+}
+
+.body a {
+    text-decoration: none;
+    color: black;
+}
+
+.res-card {
+    height: 500px;
+    width: 400px;
+    border-radius: 14px;
+    border: 2px solid lightgray;
+}
+
+.res-card img {
+    height: 60%;
+    width: 90%;
+    margin: 20px 20px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.locality, 
+.price {
+    margin-left: 20px;
+}
+
+.price {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: gray;
+}
