@@ -2,7 +2,6 @@ import React from "react";
 import { imageUrl } from "./utils/config";
 
 const RestrauntMenuCard = (props) => {
-    console.log(props);
     return (
         <div className="res-menu">
             <div className="res-menu__left-pane">
