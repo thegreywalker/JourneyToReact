@@ -21,10 +21,10 @@ const useRestraunt = () => {
 
         setFilteredRes(response);
         setFilteredRes((res) => {
-            const filteredlist = res.filter(rs => {
-                const key = rs.info.name;
+            const filteredlist = res?.filter(rs => {
+                const key = rs?.info?.name;
                 return (
-                    key.toLowerCase() === value.toLowerCase() || key.toLowerCase().includes(value.toLowerCase())
+                    key?.toLowerCase() === value?.toLowerCase() || key?.toLowerCase()?.includes(value?.toLowerCase())
                 );
             });
             console.log(filteredlist);

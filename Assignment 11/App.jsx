@@ -8,10 +8,13 @@ import About from "./Components/About";
 import Error from "./Components/Error";
 import Contact from "./Components/Contact";
 import RestrauntMenu from "./Components/RestrauntMenu";
+import Cart from "./Components/Cart";
+import { Provider } from "react-redux";
+import appStore from "./Components/utils/appStore";
 
 const App = () => {
     const { filteredRes, handleDataUpdate } = useRestraunt();
-    console.log(filteredRes);
+    // console.log(filteredRes);
 
     const handleSearch = (value) => {
         handleDataUpdate(value);
@@ -33,6 +36,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/restraunts/:resId" element={<RestrauntMenu />} />
+                <Route path="/cart" element={<Cart />} />
             </Route>
         </Routes>
     );
@@ -41,6 +45,8 @@ const App = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
-        <App />
+        <Provider store={appStore}>
+            <App />
+        </Provider>
     </BrowserRouter>
 );

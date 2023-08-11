@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ setSearch }) => {
     const [searchValue, setSearchValue] = React.useState("");
+    const cartItems = useSelector(store => store.cart.items);
+    const navigate = useNavigate();
 
     const handleSearch = () => {
         setSearch(searchValue);
         setSearchValue("");
+        navigate('/');
     };
 
     return (
@@ -38,7 +42,7 @@ const Header = ({ setSearch }) => {
                 <Link to="/">Home</Link>
                 <Link to="/about">About Us</Link>
                 <Link to="/contact">Contact</Link>
-                <li>Cart (0)</li>
+                <Link to="/cart" style={{fontWeight: "bold"}}>Cart ({cartItems.length})</Link>
             </div>
         </div>
     );

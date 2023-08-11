@@ -4,11 +4,15 @@ import { MENU_API } from "./utils/config";
 import Shimmer from "./Shimmer";
 import RestrauntMenuCard from "./RestrauntMenuCard";
 import "../restrauntmenu.css";
+import { nanoid } from "nanoid";
+import RestrauntCategory from "./RestrauntCategory";
 
 const RestrauntMenu = () => {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const [menu, setMenu] = React.useState(null);
+    const [showIndex, setShowIndex] = React.useState(null);
     const { resId } = useParams();
+
 
     React.useEffect(() => {
         fetchMenu();
@@ -23,9 +27,10 @@ const RestrauntMenu = () => {
     const Menu =
         menu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
             ?.itemCards;
-
+    const categories = menu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(c => c.card?.card?.['@type'] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory") 
 
     if (menu === null) return arr.map((lg) => <Shimmer key={lg} />);
+    // console.log(categories);
 
     return (
         <div className="res-menu-container">
@@ -34,8 +39,8 @@ const RestrauntMenu = () => {
                     <div className="header__left-pane">
                         <h1 className="name">{restrauntData.name}</h1>
                         <div className="cuisines">
-                            {restrauntData.cuisines.map((cuisine, idx) => (
-                                <p key={idx}>{cuisine}</p>
+                            {restrauntData.cuisines.map((cuisine) => (
+                                <p key={nanoid()}>{cuisine}</p>
                             ))}
                         </div>
                         <h2 className="location">{restrauntData.city}</h2>
@@ -51,14 +56,25 @@ const RestrauntMenu = () => {
                     </h1>
                     <h1 className="cost">{restrauntData.costForTwoMessage}</h1>
                 </div>
+                <div className="category">
+                    {categories.map((category, index) => (
+                        <RestrauntCategory
+                            key={nanoid()}
+                            title={category.card?.card?.title}
+                            data={category.card?.card}
+                            showItems={showIndex === index ? true : false}
+                            setShowItems={() => setShowIndex(index)}
+                        />
+                    ))}
+                </div>
                 <div className="menu-container">
                     {Menu?.map((MenuCard) => (
                         <RestrauntMenuCard
                             key={MenuCard.card.info.id}
-                            imageId={MenuCard.card.info.imageId}
                             name={MenuCard.card.info.name}
                             price={MenuCard.card.info.price}
                             description={MenuCard.card.info.description}
+                            imageId={MenuCard.card.info.imageId}
                         />
                     ))}
                 </div>

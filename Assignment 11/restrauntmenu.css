@@ -133,6 +133,7 @@
     align-items: center;
     justify-content: center;
     width: 90px;
+    cursor: pointer;
 }
 
 .res-menu__image h1 {
@@ -140,5 +141,29 @@
     color: green;
 }
 
+.category {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 80px auto;
+}
 
+.cart-menu {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.cart-menu button {
+    margin: 40px 400px;
+    height: 40px;
+    width: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 5px lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
